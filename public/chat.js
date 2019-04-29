@@ -1,7 +1,7 @@
 // Make connection
 // Make connection
-var socket = io.connect('http://localhost:4000');
-
+//var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://calm-coast-68170.herokuapp.com:4000');
 // Query DOM
 var message = document.getElementById('message'),
       handle = document.getElementById('handle'),
