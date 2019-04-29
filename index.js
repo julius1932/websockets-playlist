@@ -9,7 +9,9 @@ var server = app.listen(4000, function(){
 
 // Static files
 app.use(express.static('public'));
-
+app.get('/', (req, res) => {
+    res.redirect('/index.html');
+});
 // Socket setup & pass server
 var io = socket(server);
 io.on('connection', (socket) => {
